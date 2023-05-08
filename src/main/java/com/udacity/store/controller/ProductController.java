@@ -23,7 +23,7 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
-    @GetMapping("product/{Id}")
+    @GetMapping("product/{id}")
     public Product getProduct(@PathVariable Long id){
         return productRepository.findById(id).get();
     }
