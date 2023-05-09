@@ -53,7 +53,8 @@ export class CartComponent implements OnInit {
     var order = new Order();
     order.name = this.customerName;
     order.total = this.total;
-
+    order.creditCart = this.customerCreditCard;
+    order.address = this.customerAddress;
     //TODO: Submit order - call the service
   this.cartService.submitOrder(order).subscribe(
       (response)=> {this.cartService.clearCart();
@@ -66,7 +67,7 @@ export class CartComponent implements OnInit {
       (error)=>console.log("error")
     );
 
-    
+
   }
 
   // util

@@ -22,5 +22,8 @@ private long id;
     private String name;
     @Column
     private double total;
-
+    @Column
+    private String creditCart;
+    @Column
+    private String address;
 }
