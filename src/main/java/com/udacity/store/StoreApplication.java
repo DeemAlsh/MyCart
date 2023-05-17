@@ -25,11 +25,11 @@ public class StoreApplication  implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // TODO: Populate the database with products
 
-        Product p1=  new Product(1L,"Face Massage Roller Jade",  20.70, "https://z.nooncdn.com/products/tr:n-t_400/v1662375577/N45772376A_1.jpg", "Essence I Love Extreme Crazy Volume Mascara - Black");
+        Product p1=  new Product(1L,"Dumbbell Hand Weight",  30.80, "https://m.media-amazon.com/images/I/81+89Mtkv0L._AC_SX679_.jpg", "Amazon Basics Rubber Encased Hex Dumbbell");
         productRepository.save(p1);
-        Product p2=  new Product(2L,"Facial Sheet Masks For The Skin Nourishing",  186.19, "https://z.nooncdn.com/products/tr:n-t_400/v1661432373/N47249855A_1.jpg", "Nars Liquid Blush - Torrid");
+        Product p2=  new Product(2L,"Yoga Mat with Strap",  100.50, "https://m.media-amazon.com/images/I/91cJwPOdbmL._AC_SX679_.jpg", "1/3 Inch Extra Thick Yoga Mat Double-Sided Non Slip");
         productRepository.save(p2);
-        Product p3=  new Product(3L,"Clay Mask And Body Scrub Pore Refiner",  79.99, "https://z.nooncdn.com/products/tr:n-t_200/v1661940754/N45720704A_12.jpg", "KIKO Unlimited Double Touch Lipstick - 103");
+        Product p3=  new Product(3L,"Graphite Pickleball Paddles Set",  150.85, "https://m.media-amazon.com/images/I/718j+oNxBxL._AC_SX679_.jpg", "Polypropylene Lightweight Honeycomb Core, 3 Indoor 3 Outdoor Pickleball");
         productRepository.save(p3);
 
         System.out.println("Products saved successfully!");
